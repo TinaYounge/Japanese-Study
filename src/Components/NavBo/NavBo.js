@@ -11,6 +11,7 @@ import SearchIcon from "@material-ui/icons/Search";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    backgroundColor: "red",
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -61,6 +62,9 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  styles: {
+    backgroundColor: "#B22222	",
+  },
 }));
 
 export default function Navbo() {
@@ -68,7 +72,7 @@ export default function Navbo() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" className={classes.styles}>
         <Toolbar>
           <IconButton
             edge="start"
@@ -79,7 +83,7 @@ export default function Navbo() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            Ohaiyo
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
